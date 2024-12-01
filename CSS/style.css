@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    background: #f9f9f9;
+    background: #cecbcb;
     color: #222;
     line-height: 1.6;
 }
@@ -16,19 +16,18 @@ a {
     transition: color 0.3s;
 }
 a:hover {
-    color: #b20710;
+    color: #915356;
 }
 
 header, footer {
-    background: #e50914;
+    background: #915356;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
-header {
-    border-bottom: 3px solid #b20710;
-}
+
 header h1 {
+    font-family: Jaro;
     font-size: 28px;
     font-weight: bold;
 }
@@ -66,25 +65,39 @@ main {
 .destaques {
     flex: 3;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }
 
-.noticia-principal, 
+.noticia-principal
+{
+    background: #fff;
+    padding: 5%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 .outras-noticias article {
     background: #fff;
-    padding: 15px;
+    padding: 10%;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.noticia-principal img, 
+.noticia-principal img{
+    width: 70%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+
+}
 .outras-noticias img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
     transition: transform 0.3s;
-    object-fit: cover;
+    
 }
 .noticia-principal img:hover, 
 .outras-noticias img:hover {
@@ -93,18 +106,18 @@ main {
 
 .noticia-principal h2, 
 .outras-noticias h3 {
-    color: #b40009;
+    color: #915356;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.noticia-principal p, 
+.noticia-principal p,
 .outras-noticias p {
     font-size: 14px;
     margin-bottom: 5px;
 }
 .noticia-principal .leia-mais, 
 .outras-noticias .leia-mais {
-    color: #b40009;
+    color: #995f62;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -117,9 +130,13 @@ main {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 .categoria h3 a {
-    color: #e50914;
+    display: flex;
+    justify-content: center;
+    color: #995f62;
     transition: color 0.3s;
 }
 .categoria h3 a:hover {
